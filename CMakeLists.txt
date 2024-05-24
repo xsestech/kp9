@@ -21,4 +21,4 @@ file(GLOB sources "${PROJECT_SOURCE_DIR}/src/*.c"
                   "${PROJECT_SOURCE_DIR}/include/*/*.h")
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=address")
-add_library(kp9 SHARED ${sources})
+add_executable(kp9 ${sources})
